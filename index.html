@@ -10,28 +10,30 @@
 <body>
     <section id='msg'>
         <div class="container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="intentosAspirar" placeholder="Leave a comment here">
-                        <label for="floatingInput">Intentos a aspirar</label>
+            <form action="">
+                <div class="row g-3">
 
+                    <div class="col-5">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="intentosAspirar"
+                                placeholder="Leave a comment here" required>
+                            <label for="floatingInput">Intentos a aspirar</label>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="cantidadBasuras"
+                                placeholder="Leave a comment here" required>
+                            <label for="floatingInput">Cantidad de basuras</label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <input class="btn btn-primary" type="submit" onClick="start();" value='Start' id="start"
+                            aria-disabled="true">
                     </div>
                 </div>
-                <div class="col-5">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="cantidadBasuras" placeholder="Leave a comment here">
-                        <label for="floatingInput">Cantidad de basuras</label>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <input class="btn btn-primary" type=button onClick="start();" value='Start' id="start" aria-disabled="true"> 
-                </div>
-
-            </div>
+            </form>
         </div>
-        <br>
-
         <div class="container">
             <div class="row">
                 <div class="col-6 shadow p-3 bg-light border m-5" id="sectorA">
@@ -86,14 +88,10 @@
         </div>
         <div class="d-flex justify-content-center">
             <h3>Intentos a aspirar:
-                <label for="" id="instentosAspirar" >0</label>
+                <label for="" id="instentosAspirar">0</label>
             </h3>
         </div>
-
-
-
     </section>
-
     <script src="js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
